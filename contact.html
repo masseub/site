@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n='{"fr":"Contactez OpStream","en":"Contact OpStream"}'>Contactez OpStream</title>
+    <meta name="description" content="Prenez contact avec OpStream pour échanger sur vos projets domotiques et vos objectifs d'optimisation énergétique." />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="index.html">OpStream</a>
+        <div class="nav-links">
+          <a href="index.html" data-i18n='{"fr":"Accueil","en":"Home"}'>Accueil</a>
+          <a href="pourquoi-nous.html" data-i18n='{"fr":"Pourquoi nous","en":"Why us"}'>Pourquoi nous</a>
+          <a href="produits-services.html" data-i18n='{"fr":"Produits & services","en":"Products & Services"}'>Produits & services</a>
+          <a class="active" href="contact.html" data-i18n='{"fr":"Contact","en":"Contact"}'>Contact</a>
+          <div class="language-switcher" aria-label="Changer de langue">
+            <button type="button" data-language="fr" class="active">FR</button>
+            <button type="button" data-language="en">EN</button>
+          </div>
+        </div>
+      </nav>
+      <div class="hero">
+        <div>
+          <span class="badge" data-i18n='{"fr":"Parlons de votre projet","en":"Let's talk about your project"}'>Parlons de votre projet</span>
+          <h1 data-i18n='{"fr":"Contactez nos experts domotiques","en":"Contact our automation experts"}'>Contactez nos experts domotiques</h1>
+          <p data-i18n='{"fr":"Discutons ensemble de vos besoins : modernisation énergétique, confort connecté ou sécurité intelligente.","en":"Let's discuss your needs: energy upgrade, connected comfort or smart security."}'>Discutons ensemble de vos besoins : modernisation énergétique, confort connecté ou sécurité intelligente.</p>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80" alt="Conseiller discutant avec un client" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="contact-wrapper">
+          <aside class="contact-info">
+            <h3 data-i18n='{"fr":"Nos coordonnées","en":"Our details"}'>Nos coordonnées</h3>
+            <p data-i18n='{"fr":"Nous répondons du lundi au vendredi de 9h à 18h.","en":"We reply Monday to Friday from 9am to 6pm."}'>Nous répondons du lundi au vendredi de 9h à 18h.</p>
+            <ul>
+              <li>
+                <span>📞</span>
+                <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+              </li>
+              <li>
+                <span>✉️</span>
+                <a href="mailto:contact@opstream.fr">contact@opstream.fr</a>
+              </li>
+              <li>
+                <span>📍</span>
+                <span data-i18n='{"fr":"Paris & Île-de-France","en":"Paris & Greater Paris Area"}'>Paris & Île-de-France</span>
+              </li>
+            </ul>
+            <p data-i18n='{"fr":"Ajoutez ici vos coordonnées exactes et vos canaux supplémentaires (support, hotline, etc.).","en":"Add your exact contact details and extra channels (support, hotline, etc.)."}'>Ajoutez ici vos coordonnées exactes et vos canaux supplémentaires (support, hotline, etc.).</p>
+          </aside>
+
+          <form class="contact-form" action="#" method="post">
+            <h3 data-i18n='{"fr":"Formulaire de contact","en":"Contact form"}'>Formulaire de contact</h3>
+            <p data-i18n='{"fr":"Remplissez le formulaire et nous vous recontacterons sous 24h ouvrées.","en":"Fill in the form and we'll get back to you within one business day."}'>Remplissez le formulaire et nous vous recontacterons sous 24h ouvrées.</p>
+            <label for="name" data-i18n='{"fr":"Nom complet","en":"Full name"}'>Nom complet</label>
+            <input id="name" name="name" type="text" required placeholder="Votre nom" data-i18n-placeholder='{"fr":"Votre nom","en":"Your name"}' />
+
+            <label for="email" data-i18n='{"fr":"Adresse e-mail","en":"Email address"}'>Adresse e-mail</label>
+            <input id="email" name="email" type="email" required placeholder="votrenom@exemple.com" data-i18n-placeholder='{"fr":"votrenom@exemple.com","en":"yourname@example.com"}' />
+
+            <label for="phone" data-i18n='{"fr":"Téléphone","en":"Phone"}'>Téléphone</label>
+            <input id="phone" name="phone" type="tel" placeholder="+33 6 12 34 56 78" data-i18n-placeholder='{"fr":"+33 6 12 34 56 78","en":"+44 7 1234 5678"}' />
+
+            <label for="service" data-i18n='{"fr":"Sujet","en":"Topic"}'>Sujet</label>
+            <select id="service" name="service" required data-i18n='{"fr":"","en":""}'>
+              <option value="consulting" data-i18n='{"fr":"Audit & conseil","en":"Audit & consulting"}'>Audit & conseil</option>
+              <option value="integration" data-i18n='{"fr":"Intégration domotique","en":"Automation integration"}'>Intégration domotique</option>
+              <option value="support" data-i18n='{"fr":"Support & maintenance","en":"Support & maintenance"}'>Support & maintenance</option>
+              <option value="other" data-i18n='{"fr":"Autre demande","en":"Other request"}'>Autre demande</option>
+            </select>
+
+            <label for="message" data-i18n='{"fr":"Message","en":"Message"}'>Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Décrivez votre projet" data-i18n-placeholder='{"fr":"Décrivez votre projet","en":"Describe your project"}'></textarea>
+
+            <button class="btn btn-primary" type="submit" data-i18n='{"fr":"Envoyer","en":"Send"}'>Envoyer</button>
+            <p data-i18n='{"fr":"Ce formulaire est un exemple. Connectez-le à votre outil CRM ou ajoutez une solution d'envoi d'e-mails selon vos besoins.","en":"This form is an example. Connect it to your CRM or add an email sending solution as needed."}'>Ce formulaire est un exemple. Connectez-le à votre outil CRM ou ajoutez une solution d'envoi d'e-mails selon vos besoins.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p data-i18n='{"fr":"© 2024 OpStream. Tous droits réservés.","en":"© 2024 OpStream. All rights reserved."}'>© 2024 OpStream. Tous droits réservés.</p>
+    </footer>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
