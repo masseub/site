@@ -295,11 +295,13 @@ main {
   padding: 2rem;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-sm);
+  font-size: 1.1rem;
 }
 
 .contact-info h3 {
   margin-top: 0;
   color: var(--secondary-color);
+  font-size: 1.5rem;
 }
 
 .contact-info ul {
@@ -363,12 +365,146 @@ footer a {
   text-decoration: none;
 }
 
+/* Contact page: brand logo under coordinates */
+.contact-wrapper .brand-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(15, 61, 117, 0.08);
+  grid-column: 1;
+  justify-self: stretch;
+}
+
+.contact-wrapper .brand-logo img {
+  height: 110px;
+  width: auto;
+  opacity: 0.95;
+  filter: drop-shadow(0 6px 16px rgba(15, 61, 117, 0.15));
+  transition: transform 0.2s ease;
+}
+
+/* Coverage note on contact page */
+.coverage-note {
+  margin-top: 1rem;
+  color: var(--muted-text);
+}
+
+.contact-wrapper .brand-logo img:hover {
+  transform: scale(1.03);
+}
+
+/* Desktop alignment: place contact card left, logo right */
+@media (min-width: 768px) {
+  .contact-wrapper { grid-template-columns: 1fr 1fr; align-items: stretch; }
+  .contact-info { grid-column: 1; grid-row: 1; }
+  .contact-wrapper .brand-logo {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 0;
+    border-top: none;
+    align-self: stretch;
+  }
+}
+
+/* Pack symbols (design badges above each pack) */
+.packs .pack .pack-symbol {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 0.85rem;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: 0.02em;
+  box-shadow: var(--shadow-sm);
+}
+
+.packs .pack .pack-symbol.symbol-h {
+  background: linear-gradient(135deg, #1c6dd0, #00b7ff);
+}
+.packs .pack .pack-symbol.symbol-c {
+  background: linear-gradient(135deg, #111827, #374151);
+}
+.packs .pack .pack-symbol.symbol-si {
+  background: linear-gradient(135deg, #ffbf01, #f3e670);
+}
+.packs .pack .pack-symbol.symbol-li {
+  background: linear-gradient(135deg, #f02424, #fa8e5c);
+}
+.packs .pack .pack-symbol.symbol-ti {
+  background: linear-gradient(135deg, #7d7c7e, #b8b8bb);
+}
+.packs .pack .pack-symbol.symbol-b {
+  background: linear-gradient(135deg, #09cc5a, #5cf1e5);
+}
+
+/* Hide price lines inside packs */
+.packs .pack p > strong { display: none; }
+/* Progressive enhancement: remove the empty <p> if :has is supported */
+.packs .pack p:has(> strong) { display: none; }
+
+.packs .pack h3 {
+  margin-top: 0.4rem;
+  text-align: center;
+}
+
+.packs .pack ul {
+  padding-left: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .packs .pack .pack-symbol { width: 64px; height: 64px; }
+}
+
 .language-visible {
   display: block;
 }
 
 .language-hidden {
   display: none !important;
+}
+
+/* Page-specific tweaks for Pourquoi Nous */
+body.page-why .about .grid-2 {
+  align-items: center;
+  justify-items: center;
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Show only the about section on this page */
+body.page-why main > .section { display: none; }
+body.page-why main > .section.about { display: block; }
+
+/* About section photo smaller (≈ half) and without shadow */
+body.page-why .about-photo img {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  box-shadow: none;
+}
+
+/* Align photo and text; add background behind text */
+body.page-why .about-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.page-why .about-content {
+  background: rgba(255, 255, 255, 0.92);
+  padding: 1.5rem 2rem;
+  border-radius: var(--border-radius);
+  max-width: 720px;
+  border: 1px solid rgba(15, 61, 117, 0.08);
+}
+body.page-why .about-content h2 {
+  margin-top: 0;
 }
 
 @media (max-width: 768px) {
@@ -389,5 +525,12 @@ footer a {
 
   .cta-group {
     justify-content: center;
+  }
+
+  body.page-why .about .grid-2 {
+    gap: 1.5rem;
+  }
+  body.page-why .about-photo img {
+    max-width: 260px;
   }
 }
