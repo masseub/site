@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n='{"fr":"Réalisation – Maison neuve à Genappe | Knexflow","en":"Case Study – New house in Genappe | Knexflow"}'>Réalisation – Maison neuve à Genappe | Knexflow</title>
+    <meta name="description" content="Étude de cas : maison neuve à Genappe. Suivi énergétique en temps réel, automatisations intelligentes, pilotage à distance et sécurité intégrée, sur base ouverte et évolutive." data-i18n-meta='{"fr":"Étude de cas : maison neuve à Genappe. Suivi énergétique en temps réel, automatisations intelligentes, pilotage à distance et sécurité intégrée, sur base ouverte et évolutive.","en":"Case study: new house in Genappe. Real-time energy monitoring, smart automations, remote control and integrated security, on an open and scalable foundation."}' />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NNYJRVWY19"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);} 
+      gtag('js', new Date());
+      gtag('config', 'G-NNYJRVWY19');
+    </script>
+
+    <style>
+      /* Page-specific layout for alternating text/images */
+      .case-rows { display: grid; gap: 2.5rem; }
+      .case-row { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+        gap: 2rem; 
+        align-items: center;
+      }
+      .case-row h3 { margin-top: 0; color: var(--secondary-color); }
+      .case-row:nth-child(even) .case-text { order: 2; }
+      .case-text p { color: var(--muted-text); text-align: justify; }
+      .case-cta { text-align: center; }
+
+      /* Tabs */
+      .tabs { margin-top: 0.5rem; }
+      .tabs-nav { 
+        display: flex; 
+        gap: 0.75rem; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        margin: 0.5rem 0 1.5rem; 
+      }
+      .tab-btn {
+        background: #fff;
+        color: var(--secondary-color);
+        border: 1px solid rgba(15,61,117,0.15);
+        padding: 0.55rem 1rem;
+        border-radius: 999px;
+        cursor: pointer;
+        box-shadow: var(--shadow-sm);
+        transition: var(--transition);
+      }
+      .tab-btn[aria-selected="true"] {
+        background: var(--primary-color);
+        color: #fff;
+        border-color: transparent;
+      }
+      .tab-btn:hover { transform: translateY(-1px); }
+      .tab-panel { display: none; }
+      .tab-panel.active { display: block; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="index.html">Knexflow</a>
+        <div class="nav-links">
+          <a href="index.html" data-i18n='{"fr":"Accueil","en":"Home"}'>Accueil</a>
+          <a href="pourquoi-nous.html" data-i18n='{"fr":"Pourquoi nous","en":"Why us"}'>Pourquoi nous</a>
+          <a href="produits-services.html" data-i18n='{"fr":"Produits & services","en":"Products & Services"}'>Produits & services</a>
+          <a class="active" href="realisation.html" data-i18n='{"fr":"Réalisations","en":"Case studies"}'>Réalisations</a>
+          <a href="contact.html" data-i18n='{"fr":"Contact","en":"Contact"}'>Contact</a>
+          <div class="language-switcher" aria-label="Changer de langue">
+            <button type="button" data-language="fr" class="active">FR</button>
+            <button type="button" data-language="en">EN</button>
+          </div>
+        </div>
+      </nav>
+      <div class="hero">
+        <div>
+          <span class="badge" data-i18n='{"fr":"Réalisation","en":"Case study"}'>Réalisation</span>
+          <h1 data-i18n='{"fr":"Réalisations","en":"Case studies"}'>Réalisations</h1>
+          <p data-i18n='{"fr":"Visibilité énergétique en temps réel, automatisations intelligentes et contrôle à distance, sur une base ouverte et évolutive.","en":"Real-time energy visibility, smart automations and remote control, on an open and scalable foundation."}'>Visibilité énergétique en temps réel, automatisations intelligentes et contrôle à distance, sur une base ouverte et évolutive.</p>
+          <div class="cta-group">
+            <a class="btn btn-primary" href="https://knexflow.be/contact.html" data-i18n='{"fr":"Contactez-nous","en":"Contact us"}'>Contactez-nous</a>
+          </div>
+        </div>
+        <div>
+          <img src="assets/images/placeholder-hero.jpg" alt="Tableau de bord énergétique" data-i18n-alt='{"fr":"Tableau de bord énergétique","en":"Energy dashboard"}' />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-title">
+          <h2 data-i18n='{"fr":"Maison neuve à Genappe : confort connecté et énergie optimisée","en":"New house in Genappe: connected comfort and optimized energy"}'>Maison neuve à Genappe : confort connecté et énergie optimisée</h2>
+        </div>
+
+        <div class="tabs">
+          <div class="tabs-nav" role="tablist" aria-label="Exemples de réalisations" data-i18n-aria-label='{"fr":"Exemples de réalisations","en":"Project examples"}'>
+            <button class="tab-btn" role="tab" aria-selected="true" aria-controls="project-genappe" id="tab-genappe" data-i18n='{"fr":"Maison neuve à Genappe","en":"New house in Genappe"}'>Maison neuve à Genappe</button>
+          </div>
+
+          <div id="project-genappe" class="tab-panel active" role="tabpanel" aria-labelledby="tab-genappe">
+            <div class="case-rows">
+          <div class="case-row">
+            <div class="case-text">
+              <h3 data-i18n='{"fr":"Contexte : normes énergétiques et ambition durable","en":"Context: energy standards and a sustainable ambition"}'>Contexte : normes énergétiques et ambition durable</h3>
+              <p data-i18n='{"fr":"La construction récente de cette maison à Genappe, en Brabant wallon, s’est effectuée sous le signe de l’efficacité énergétique. Les normes urbanistiques actuelles imposaient en effet l’installation d’une pompe à chaleur (PAC) comme système de chauffage principal, une solution à la fois écologique et performante. Déjà équipée de panneaux solaires photovoltaïques sur son toit, la maison disposait d’un atout pour produire sa propre électricité verte.","en":"The recent construction of this house in Genappe, Walloon Brabant, was carried out with a strong focus on energy efficiency. Current urban planning standards required the installation of a heat pump (HP) as the main heating system — a solution that is both eco‑friendly and efficient. Already equipped with photovoltaic solar panels on its roof, the house had a clear advantage in producing its own green electricity."}'>La construction récente de cette maison à Genappe, en Brabant wallon, s’est effectuée sous le signe de l’efficacité énergétique...</p>
+              <p data-i18n='{"fr":"Cependant, les propriétaires ont rapidement constaté que la PAC affichait une consommation électrique élevée, sans qu’ils puissent en avoir une vision claire. Ils manquaient d’outils pour visualiser en temps réel la production solaire, la consommation de la maison et le taux d’autoconsommation de l’énergie produite. Ce manque de visibilité rendait difficile l’optimisation de leur utilisation d’énergie et la maîtrise de leur facture électrique.","en":"However, the owners quickly noticed that the heat pump showed high electricity consumption, without clear visibility. They lacked tools to view, in real time, solar production, household consumption, and the self‑consumption rate of the generated energy. This lack of visibility made it difficult to optimize energy use and control their electricity bill."}'>Cependant, les propriétaires ont rapidement constaté que la PAC...</p>
+            </div>
+            <div class="case-image">
+              <img src="assets/images/realisation-1.jpg" alt="Maison à Genappe avec panneaux photovoltaïques" data-i18n-alt='{"fr":"Maison à Genappe avec panneaux photovoltaïques","en":"House in Genappe with photovoltaic panels"}' />
+            </div>
+          </div>
+
+          <div class="case-row">
+            <div class="case-text">
+              <h3 data-i18n='{"fr":"Énergie sous contrôle : suivi en temps réel et autoconsommation optimisée","en":"Energy under control: real‑time monitoring and optimized self‑consumption"}'>Énergie sous contrôle : suivi en temps réel et autoconsommation optimisée</h3>
+              <p data-i18n='{"fr":"Knexflow a installé des tableaux de bord énergétiques accessibles sur tablette, smartphone ou ordinateur, afin de donner aux occupants une visibilité totale sur leurs flux d’énergie. En un coup d’œil, ils suivent en temps réel la consommation de la pompe à chaleur et des autres équipements, la production électrique générée par leurs panneaux photovoltaïques, ainsi que le taux d’autoconsommation (part de l’énergie solaire directement utilisée dans la maison). Armés de ces informations claires, les propriétaires peuvent adapter leur comportement et éviter les gaspillages.","en":"Knexflow installed energy dashboards accessible on tablet, smartphone or computer to give occupants full visibility over their energy flows. At a glance, they can monitor in real time the heat pump’s consumption and that of other devices, the electricity produced by their PV panels, as well as the self‑consumption rate (the share of solar energy used directly in the home). With this clear insight, the owners can adapt their behavior and avoid waste."}'>Knexflow a installé des tableaux de bord énergétiques accessibles...</p>
+              <p data-i18n='{"fr":"Surtout, Knexflow a mis en place des automatismes intelligents pour tirer le meilleur parti de l’énergie solaire. Concrètement, le système pilote certains appareils (comme la PAC ou le chauffe-eau) aux heures où la production photovoltaïque est maximale. Ainsi, l’énergie gratuite du soleil est utilisée en priorité et la consommation sur le réseau public s’en trouve réduite d’autant.","en":"Above all, Knexflow implemented smart automations to make the most of solar energy. Concretely, the system controls certain appliances (such as the heat pump or water heater) during hours when PV production peaks. As a result, free solar energy is used first, and grid consumption is reduced accordingly."}'>Surtout, Knexflow a mis en place des automatismes intelligents...</p>
+            </div>
+            <div class="case-image">
+              <img src="assets/images/realisation-2.jpg" alt="Tableaux de bord énergétiques et suivi" data-i18n-alt='{"fr":"Tableaux de bord énergétiques et suivi","en":"Energy dashboards and monitoring"}' />
+            </div>
+          </div>
+
+          <div class="case-row">
+            <div class="case-text">
+              <h3 data-i18n='{"fr":"Pilotage à distance : votre maison au bout des doigts","en":"Remote control: your home at your fingertips"}'>Pilotage à distance : votre maison au bout des doigts</h3>
+              <p data-i18n='{"fr":"L’installation domotique mise en place par Knexflow offre aux occupants un contrôle total à distance de leur habitation. Que ce soit depuis une application mobile dédiée ou via une interface web sécurisée, ils peuvent surveiller et agir sur tous les équipements clés de la maison, et ce où qu’ils soient. Chauffage, éclairage, volets, alarme… tout est pilotable en quelques tapotements sur l’écran grâce à une interface ergonomique et conviviale. Par exemple, ils peuvent ajuster la température ou l’éclairage à distance, lancer un mode éco lorsqu’ils sont absents, ou encore vérifier en direct l’état des capteurs. Cette maîtrise à portée de main apporte un véritable confort au quotidien, ainsi qu’une précieuse sérénité : la maison reste sous surveillance, même à des kilomètres de distance.","en":"The home automation system deployed by Knexflow gives occupants full remote control of their home. From a dedicated mobile app or a secure web interface, they can monitor and act on all key equipment wherever they are. Heating, lighting, shutters, alarm — everything is controllable in a few taps thanks to an ergonomic and user‑friendly interface. For instance, they can adjust temperature and lighting remotely, activate eco mode when away, or check sensor status live. This control at your fingertips delivers real everyday comfort and peace of mind: the house stays under watch, even miles away."}'>L’installation domotique mise en place par Knexflow offre...</p>
+            </div>
+            <div class="case-image">
+              <img src="assets/images/realisation-3.jpg" alt="Pilotage domotique à distance" data-i18n-alt='{"fr":"Pilotage domotique à distance","en":"Remote home automation control"}' />
+            </div>
+          </div>
+
+          <div class="case-row">
+            <div class="case-text">
+              <h3 data-i18n='{"fr":"Sécurité intelligente : un habitat qui veille sur lui-même","en":"Smart security: a home that watches over itself"}'>Sécurité intelligente : un habitat qui veille sur lui-même</h3>
+              <p data-i18n='{"fr":"Au-delà de l’énergie, la solution domotique déployée renforce aussi la sécurité du domicile. Grâce à des scénarios de simulation de présence, la maison paraît habitée même en l’absence des occupants. À la nuit tombée, certaines lumières et volets s’activent automatiquement pour déjouer d’éventuels cambrioleurs. En parallèle, les systèmes d’alarme et de caméras sont intégrés au tableau de bord domotique. Les propriétaires reçoivent ainsi des alertes en temps réel sur leur smartphone en cas d’intrusion ou d’incident, et peuvent consulter les vidéos de surveillance à distance.","en":"Beyond energy, the automation solution also strengthens home security. With presence‑simulation scenarios, the house appears occupied even when no one is home. At nightfall, certain lights and shutters activate automatically to deter potential intruders. Meanwhile, alarm and camera systems are integrated into the automation dashboard. Owners receive real‑time smartphone alerts in case of intrusion or incident and can view surveillance footage remotely."}'>Au-delà de l’énergie, la solution domotique déployée renforce...</p>
+              <p data-i18n='{"fr":"Cette vigilance automatisée apporte une tranquillité d’esprit précieuse. La maison se gère pratiquement toute seule et les habitants savent qu’ils seront immédiatement informés du moindre problème.","en":"This automated vigilance brings valuable peace of mind. The home practically manages itself, and residents know they’ll be notified immediately of any issue."}'>Cette vigilance automatisée apporte une tranquillité d’esprit précieuse...</p>
+            </div>
+            <div class="case-image">
+              <img src="assets/images/realisation-4.jpg" alt="Sécurité domotique intelligente" data-i18n-alt='{"fr":"Sécurité domotique intelligente","en":"Smart home security"}' />
+            </div>
+          </div>
+
+          <div class="case-row">
+            <div class="case-text">
+              <h3 data-i18n='{"fr":"Une base fiable, évolutive et ouverte","en":"A reliable, scalable and open foundation"}'>Une base fiable, évolutive et ouverte</h3>
+              <p data-i18n='{"fr":"Derrière toutes ces fonctionnalités se trouve une infrastructure domotique robuste et pérenne, conçue par Knexflow. Le système s’appuie sur des technologies standardisées et ouvertes (telles que la norme KNX), ce qui garantit une compatibilité étendue avec de nombreux équipements du marché et une évolution facile dans le temps. Autrement dit, l’installation pourra être enrichie de nouveaux dispositifs ou de nouvelles fonctionnalités à l’avenir, sans remise en question de l’ensemble du système en place. Cette approche professionnelle et modulable rassure les propriétaires : ils disposent d’une solution fiable, évolutive et sécurisée, qui continuera de fonctionner sur le long terme.","en":"Behind these features lies a robust, long‑lasting home automation infrastructure designed by Knexflow. The system relies on standardized, open technologies (such as KNX), ensuring broad compatibility with many devices on the market and easy evolution over time. In other words, the installation can be enhanced with new devices or features later on without questioning the whole system. This professional, modular approach reassures owners: they have a reliable, scalable and secure solution built to last."}'>Derrière toutes ces fonctionnalités se trouve une infrastructure domotique robuste...</p>
+            </div>
+            <div class="case-image">
+              <img src="assets/images/realisation-5.jpg" alt="Infrastructure domotique ouverte (KNX)" data-i18n-alt='{"fr":"Infrastructure domotique ouverte (KNX)","en":"Open home automation infrastructure (KNX)"}' />
+            </div>
+          </div>
+
+          <div class="case-row">
+            <div class="case-text">
+              <h3 data-i18n='{"fr":"Confort, économies d’énergie et sérénité au rendez-vous","en":"Comfort, energy savings and peace of mind delivered"}'>Confort, économies d’énergie et sérénité au rendez-vous</h3>
+              <p data-i18n='{"fr":"Grâce à l’intervention de Knexflow, cette nouvelle habitation de Genappe répond pleinement aux exigences modernes de confort et d’efficacité énergétique. Les occupants profitent désormais d’un foyer où technologie rime avec simplicité : ils visualisent et contrôlent tout d’un simple geste, réalisent des économies substantielles en maximisant l’utilisation de leur énergie solaire, et vivent sereinement dans une maison sûre et bien pensée. Cette réalisation illustre le savoir-faire de Knexflow pour créer des solutions domotiques sur mesure, fiables et parfaitement adaptées aux besoins réels des utilisateurs.","en":"Thanks to Knexflow’s intervention, this new home in Genappe fully meets modern expectations of comfort and energy efficiency. The occupants now enjoy a home where technology rhymes with simplicity: they visualize and control everything with a simple gesture, achieve substantial savings by maximizing their solar energy use, and live peacefully in a safe, well‑designed house. This project illustrates Knexflow’s know‑how in creating custom, reliable automation solutions that fit real‑world needs."}'>Grâce à l’intervention de Knexflow, cette nouvelle habitation de Genappe répond pleinement...</p>
+            </div>
+            <div class="case-image">
+              <img src="assets/images/realisation-6.jpg" alt="Confort, économies et sérénité" data-i18n-alt='{"fr":"Confort, économies et sérénité","en":"Comfort, savings and peace of mind"}' />
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="highlight case-cta">
+          <h2 data-i18n='{"fr":"Envie d’une maison aussi intelligente ?","en":"Want a home this smart?"}'>Envie d’une maison aussi intelligente ?</h2>
+          <p data-i18n='{"fr":"Vous envisagez de connecter votre habitation neuve ou de moderniser votre logement avec des solutions domotiques innovantes ? Contactez dès aujourd’hui Knexflow pour bénéficier de notre expertise et concrétiser votre propre projet sur mesure. Notre équipe passionnée vous accompagnera pour faire de votre maison un espace plus confortable, plus sûr et plus économe en énergie.","en":"Looking to connect your new home or modernize your property with innovative home automation? Contact Knexflow today to benefit from our expertise and bring your custom project to life. Our passionate team will help make your home more comfortable, safer and more energy‑efficient."}'>Vous envisagez de connecter votre habitation neuve ou de moderniser votre logement...</p>
+          <div class="cta-group" style="justify-content:center;">
+            <a class="btn btn-primary" href="https://knexflow.be/contact.html" data-i18n='{"fr":"Parler de mon projet","en":"Discuss my project"}'>Parler de mon projet</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p data-i18n='{"fr":"© 2024 Knexflow. Tous droits réservés.","en":"© 2024 Knexflow. All rights reserved."}'>© 2024 Knexflow. Tous droits réservés.</p>
+    </footer>
+    <script src="assets/js/main.js" defer></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const tabs = document.querySelectorAll('.tab-btn');
+        const panels = document.querySelectorAll('.tab-panel');
+        tabs.forEach((btn) => {
+          btn.addEventListener('click', () => {
+            // update selected
+            tabs.forEach((b) => b.setAttribute('aria-selected', 'false'));
+            btn.setAttribute('aria-selected', 'true');
+            // show target panel
+            const target = btn.getAttribute('aria-controls');
+            panels.forEach((p) => p.classList.toggle('active', p.id === target));
+          });
+        });
+      });
+    </script>
+  </body>
+  </html>
