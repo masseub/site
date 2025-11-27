@@ -530,7 +530,45 @@ body.page-why .about-content h2 {
   body.page-why .about .grid-2 {
     gap: 1.5rem;
   }
-  body.page-why .about-photo img {
+body.page-why .about-photo img {
     max-width: 260px;
   }
+}
+
+/* Partners section (bottom of contact page) */
+.partners {
+  padding-top: 0;
+}
+
+.partners-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.partners-logos .partner-link {
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+}
+
+.partners-logos .partner-logo {
+  max-height: 168px; /* +40% */
+  width: auto;
+  border-radius: 0; /* keep brand shapes intact */
+  box-shadow: none;
+  background: transparent;
+  filter: drop-shadow(0 6px 16px rgba(15, 61, 117, 0.08));
+}
+
+.partners-logos .partner-link:hover .partner-logo {
+  transform: scale(1.03);
+}
+
+@media (max-width: 480px) {
+  .partners-logos .partner-logo { max-height: 126px; /* +40% */ }
 }
